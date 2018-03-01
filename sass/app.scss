@@ -1,0 +1,440 @@
+html,
+body {
+  margin: 0px;
+  padding: 0;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgb(100, 100, 100);
+  font-weight: 400;
+  background: #f5f5f5;
+}
+
+/*RESET*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+td,
+input,
+select,
+ol,
+ul,
+li,
+button,
+textarea,
+form {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  border: 0px;
+}
+
+a,
+a:hover,
+a:link,
+a:focus {
+  text-decoration: none;
+}
+
+a,
+img {
+  border: 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.lft {
+  float: left !important;
+}
+
+.rt {
+  float: right !important;
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+  display: block;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after,
+.container:after {
+  clear: both;
+}
+
+.clr {
+  clear: both !important;
+}
+
+.trans {
+  -webkit-transition: all 0.5 ease-in;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease-in;
+  transition: all 0.5s ease;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*TEXT STYLES*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*TEXT STYLES*/
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  grid-column: 2/5;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  color: #bea67c;
+  letter-spacing: 5px;
+}
+
+.nav {
+  padding-top: 20px;
+  float: right;
+  width: 100%;
+}
+
+.menu {
+  float: right;
+  margin-right: 50px;
+}
+
+.menu>ul {
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu>ul>li {
+  float: left;
+  margin-left: 40px;
+}
+
+.menu>ul>li>a {
+  font-size: 14px;
+  color: grey;
+}
+
+.menu>ul>li>a:hover {
+  color: #2c2c2c;
+}
+
+.m_btn {
+  float: right;
+  display: block;
+  width: 36px;
+}
+
+.m_btn span {
+  background: rgb(255, 255, 255);
+  height: 3px;
+  display: block;
+  margin: 7px 0;
+}
+
+@media (min-width: 768px) {
+  .m_btn {
+    display: none;
+  }
+  .menu {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .m_btn {
+    display: block;
+  }
+  .menu {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu ul {
+    text-align: right
+  }
+  .menu>ul>li {
+    margin-left: 0;
+    padding: 5px 0;
+    float: none;
+  }
+}
+
+#select {
+  background: transparent;
+  color: gray;
+  border: none;
+}
+
+.option {
+  background: black;
+  color: grey;
+}
+
+#select {
+  margin-left: 15px;
+}
+
+/* NAVBAR */
+
+.hero {
+  background: url('/img/bg.png') center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2/3;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  height: 100vh;
+  color: #bea67c;
+  h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+    font-weight: 800;
+  }
+  button {
+    border: 2px solid white;
+    font-family: "Montserrat", sans-serif;
+    background: transparent;
+    color: white;
+    padding: 10px 50px;
+    margin-top: 30px;
+  }
+  a {
+    color: white
+  }
+  .arrow {
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  img {
+    width: 20px;
+    height: 30px;
+  }
+  .arrow2 {
+    margin-left: 4px;
+    margin-top: 10px;
+  }
+  span {
+    width: 50px;
+    transform: rotate(90deg);
+    opacity: .3;
+    padding-top: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+  }
+}
+
+.side-text {
+  
+  width: 200px;
+  transform: rotate(90deg);
+  font-size: 10px;
+  letter-spacing: 3px;
+  opacity: .5;
+  margin-top: 200px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: #bea67c;
+}
+
+.products {
+  display: flex;
+  width: 800px;
+  margin: 100px auto; 
+  overflow: hidden;
+  .content {
+    grid-column: 2/4;
+    display: flex;
+    position: relative;
+    .table {
+      grid-column: 2/3;
+      color: black;
+      .smalline {
+        width: 30px;
+        border-top: 2px solid black
+      }
+      .line {
+        width: 100px;
+        border-top: 1px solid black;
+        display: inline-block;
+        margin-bottom: 6px;
+      }
+      h2 {
+        font-weight: 800;
+        letter-spacing: 2px;
+        display: inline-block;
+      }
+      p{
+        width: 300px;
+      }
+      .btn {
+        color: black;
+        background: transparent;
+      }
+      a {
+        color: black
+      }
+      .arrow {
+        fill: black;
+        padding-top: 5px;
+      }
+    }
+    .sideimage p {
+      font-size: 200px;
+      font-weight: 800;
+      position: absolute;
+      left: 300px;
+      opacity: .1;
+      margin-top: 100px;
+    }
+  }
+}
+
+
+.products2 {
+  display: flex;
+  width: 800px;
+  margin: 100px auto;  
+  .content2 {
+    display: flex;
+    position: relative;
+    .table2 {
+      color: black;
+      text-align: right;
+      .smalline {
+        width: 30px;
+        border-top: 2px solid black
+      }
+      .line {
+        width: 100px;
+        border-top: 1px solid black;
+        display: inline-block;
+        margin-bottom: 6px;
+      }
+     
+      p{
+        width: 300px;
+        margin-left: 50px;
+      }
+      .btn {
+        color: black;
+        background: transparent;
+      }
+      a {
+        color: black
+      }
+      .arrow {
+        fill: black;
+        padding-top: 5px;
+      }
+    }
+    .sideimage2 p {
+      font-size: 200px;
+      font-weight: 800;
+      position: absolute;
+      right: 330px;
+      opacity: .1;
+      margin-top: 100px;
+    }
+  }
+}
+
+.quallity{
+  text-align: center;
+h2 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: black
+}
+.smalline {
+  width: 30px;
+  border-top: 2px solid black
+}
+div{
+  margin: 10px auto;
+}
+p{
+  margin: 0 auto;
+  max-width: 500px;
+}
+}

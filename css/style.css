@@ -1,0 +1,57 @@
+html, body{margin:0px; padding:0; font-family: arial, sans-serif; font-size:16px; line-height:28px; color:rgb(100, 100, 100); font-weight:400;  background: #f5f5f5;}
+
+/*RESET*/
+h1, h2, h3, h4, h5, h6, p, table, td, input, select, ol, ul, li, button, textarea, form{margin:0; padding:0; font-weight:normal; border:0px;}
+a, a:hover, a:link, a:focus{text-decoration:none;}
+a, img{border:0px;}
+img{max-width:100%;}
+li{list-style:none;}
+input, textarea{ outline:none;}
+textarea {resize: none;}
+a{-webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; transition: all 0.3s ease;}
+
+.hide{display:none !important;}
+.show{display:block !important;}
+.lft{float:left !important;}
+.rt{float:right !important;}
+.clearfix:before, .clearfix:after, .container:before, .container:after{display:block; line-height:0; content:"";}
+.clearfix:after, .container:after{clear:both;}
+.clr{ clear:both !important;}
+.trans{-webkit-transition: all 0.5 ease-in; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease-in; transition: all 0.5s ease;}
+
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+/*TEXT STYLES*/
+h1, h2, h3, h4, h5, h6{ }
+/*TEXT STYLES*/
+
+.wrapper{width:100%; height:100%;}
+.container{max-width:1170px; margin:0 auto; position:relative; padding:0 20px;}
+header{background:rgb(88, 88, 88); border-bottom:1px solid #ddd; padding:30px 0;}
+.logo{float:left; font-size:30px; font-weight:bold;}
+.menu{float:right;}
+.menu > ul{}
+.menu > ul > li{float:left; margin-left:40px;}
+.menu > ul > li > a{font-size:14px; color:rgb(255, 255, 255);}
+.menu > ul > li > a:hover{color:#2c2c2c;}
+.m_btn{float:right; display:block; width:36px;}
+.m_btn span{background:#333; height:3px; display:block; margin:7px 0;}
+
+
+@media(min-width:768px){
+.m_btn{display:none;}
+.menu{display:block !important;}
+}
+
+@media(max-width:767px){
+.m_btn{display:block;}
+.menu{display:none; width:100%; margin-top:20px;}
+.menu > ul > li{margin-left:0; padding:5px 0; border-top:1px solid #ddd; float:none;}
+}
+/* NAVBAR */
+
+
